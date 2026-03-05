@@ -1,0 +1,49 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build logs (contain local paths - not for version control)
+build_log.txt
+*.log
+
+# User-specific publish profiles
+**/Properties/PublishProfiles/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# MSIX packaging output
+AppPackages/
+BundleArtifacts/
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+
+# Code coverage
+*.coverage
+*.coveragexml
+
+# Test results
+TestResults/
+
+# Rider
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows thumbnails
+Thumbs.db

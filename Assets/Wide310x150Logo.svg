@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 150">
+  <!-- Wide310x150Logo - Wide tile -->
+  <defs>
+    <linearGradient id="ghostGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00aaff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="310" height="150" rx="16" fill="#151522"/>
+  <!-- Decorative radar rings -->
+  <circle cx="80" cy="75" r="55" fill="none" stroke="#2d2d44" stroke-width="2" stroke-dasharray="6 6"/>
+  <circle cx="80" cy="75" r="30" fill="none" stroke="#2d2d44" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Ghost body -->
+  <path d="M 32 122 C 32 44, 52 20, 80 20 C 108 20, 128 44, 128 122 L 128 140 L 32 140 Z" fill="url(#ghostGrad)"/>
+  <!-- Eyes -->
+  <ellipse cx="64" cy="66" rx="8" ry="12" fill="#151522"/>
+  <ellipse cx="96" cy="66" rx="8" ry="12" fill="#151522"/>
+  <circle cx="64" cy="66" r="3.5" fill="#00ffcc"/>
+  <circle cx="96" cy="66" r="3.5" fill="#00ffcc"/>
+  <!-- Eyebrows -->
+  <path d="M 50 50 L 70 60" stroke="#151522" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 110 50 L 90 60" stroke="#151522" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Crosshair -->
+  <path d="M 58 92 L 102 92 M 80 70 L 80 114" stroke="#ff3366" stroke-width="3.5"/>
+  <circle cx="80" cy="92" r="19" fill="none" stroke="#ff3366" stroke-width="3"/>
+
+  <!-- App name text -->
+  <text x="165" y="68" font-family="Segoe UI, Segoe UI Semibold, Arial, sans-serif" font-size="32" font-weight="600" fill="#00e6b8">PortGhost</text>
+  <text x="165" y="96" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#7a7aaa">Port Scanner &amp; Process Killer</text>
+</svg>

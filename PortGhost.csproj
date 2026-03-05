@@ -7,6 +7,29 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+
+    <!-- Application Metadata -->
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Company>PortGhost</Company>
+    <Product>PortGhost</Product>
+    <Description>See what haunts your ports. Exorcise the demons.</Description>
+    <Copyright>Copyright © 2025 PortGhost</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <!-- ApplicationIcon: set this once you have converted Assets\PortGhost_Logo.svg to .ico -->
+    <!-- <ApplicationIcon>Assets\PortGhost.ico</ApplicationIcon> -->
+
+    <!-- Publish profiles -->
+    <PublishSingleFile Condition="'$(RuntimeIdentifier)' != ''">true</PublishSingleFile>
+    <SelfContained Condition="'$(RuntimeIdentifier)' != ''">true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+
+    <!-- MSIX (Microsoft Store) packaging properties -->
+    <!-- Set GenerateMsixOnBuild=true when building via 'dotnet publish' for Store -->
+    <WindowsPackageType Condition="'$(GenerateMsixOnBuild)' == 'true'">MSIX</WindowsPackageType>
+    <AppxPackageSigningEnabled Condition="'$(GenerateMsixOnBuild)' == 'true'">false</AppxPackageSigningEnabled>
+
   </PropertyGroup>
 
 </Project>

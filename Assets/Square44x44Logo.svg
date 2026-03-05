@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+  <!-- Square44x44Logo - Small tile / taskbar -->
+  <rect width="44" height="44" rx="8" fill="#151522"/>
+  <!-- Ghost body -->
+  <path d="M 7 34 C 7 14, 13 6, 22 6 C 31 6, 37 14, 37 34 L 37 42 L 7 42 Z" fill="#00e6b8"/>
+  <!-- Eyes -->
+  <ellipse cx="16" cy="19" rx="3" ry="4.5" fill="#151522"/>
+  <ellipse cx="28" cy="19" rx="3" ry="4.5" fill="#151522"/>
+  <circle cx="16" cy="19" r="1.2" fill="#00e6b8"/>
+  <circle cx="28" cy="19" r="1.2" fill="#00e6b8"/>
+  <!-- Crosshair -->
+  <path d="M 16 27 L 28 27 M 22 21 L 22 33" stroke="#ff3366" stroke-width="1.5"/>
+  <circle cx="22" cy="27" r="5" fill="none" stroke="#ff3366" stroke-width="1.5"/>
+</svg>

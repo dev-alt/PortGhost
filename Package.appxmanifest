@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This file describes the metadata for Microsoft Store packaging.
+  Before submitting to the Store:
+    1. Update the Identity Name to your Partner Center identity name.
+    2. Update the Publisher to match your Partner Center publisher DN.
+    3. Update PhoneIdentity GUID if applicable.
+-->
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap rescap">
+
+  <Identity
+    Name="PortGhost.App"
+    Publisher="CN=YourPublisherName"
+    Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>PortGhost</DisplayName>
+    <PublisherDisplayName>YourPublisherDisplayName</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="en-us"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="PortGhost" Executable="PortGhost.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements
+        DisplayName="PortGhost"
+        Description="See what haunts your ports. Exorcise the demons."
+        BackgroundColor="transparent"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <!-- Full trust is required for desktop apps that access all WinAPI features -->
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+
+</Package>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <!-- Flat Background Circle -->
+    <circle cx="256" cy="256" r="240" fill="#1e1e2d"/>
+    
+    <!-- Flat Ghost vector -->
+    <path d="M 156 320 C 156 180, 206 120, 256 120 C 306 120, 356 180, 356 320 L 356 412 L 156 412 Z" fill="#00e6b8"/>
+    
+    <!-- Network Port Plug element flat -->
+    <path d="M 196 410 L 196 460 L 316 460 L 316 410 Z" fill="#2d2d44"/>
+    <path d="M 226 460 L 226 490 M 256 460 L 256 490 M 286 460 L 286 490" stroke="#00e6b8" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Ghost Eyes Background -->
+    <ellipse cx="216" cy="220" rx="16" ry="24" fill="#1e1e2d"/>
+    <ellipse cx="296" cy="220" rx="16" ry="24" fill="#1e1e2d"/>
+    
+    <!-- Ghost Eyes Inner -->
+    <circle cx="216" cy="220" r="6" fill="#00e6b8"/>
+    <circle cx="296" cy="220" r="6" fill="#00e6b8"/>
+
+    <!-- Flat Angry Eyebrows -->
+    <path d="M 190 180 L 230 200" stroke="#1e1e2d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 322 180 L 282 200" stroke="#1e1e2d" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Flat Red target marker -->
+    <path d="M 216 256 L 296 256 M 256 216 L 256 296" stroke="#ff3366" stroke-width="8"/>
+    <circle cx="256" cy="256" r="45" fill="none" stroke="#ff3366" stroke-width="6"/>
+
+</svg>
