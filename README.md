@@ -2,7 +2,7 @@
 
 **See what haunts your ports. Exorcise the demons.**
 
-[![GitHub Release](https://img.shields.io/github/v/release/dev-alt/PortGhost?style=flat-square&logo=github)](https://github.com/your-username/PortGhost/releases/latest)
+[![GitHub Release](https://img.shields.io/github/v/release/dev-alt/PortGhost?style=flat-square&logo=github)](https://github.com/dev-alt/PortGhost/releases/latest)
 [![Microsoft Store](https://img.shields.io/badge/Microsoft%20Store-Download-blue?style=flat-square&logo=microsoft)](https://apps.microsoft.com/store/detail/portghost/YOUR_APP_ID)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 [![.NET 10](https://img.shields.io/badge/.NET-10.0-purple?style=flat-square)](https://dotnet.microsoft.com/download)
@@ -48,7 +48,7 @@ PortGhost shines a light on port hauntings:
 
 ### Option 1: GitHub Release (Standalone `.exe`)
 
-Download the latest self-contained executable from the [**Releases page**](https://github.com/your-username/PortGhost/releases/latest). No installation required — just run `PortGhost.exe`.
+Download the latest self-contained executable from the [**Releases page**](https://github.com/dev-alt/PortGhost/releases/latest). No installation required — just run `PortGhost.exe`.
 
 ### Option 2: Microsoft Store
 
@@ -66,7 +66,7 @@ Download the latest self-contained executable from the [**Releases page**](https
 
 ```powershell
 # Clone the repository
-git clone https://github.com/your-username/PortGhost.git
+git clone https://github.com/dev-alt/PortGhost.git
 cd PortGhost
 
 # Restore & build

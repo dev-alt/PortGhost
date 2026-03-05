@@ -12,7 +12,7 @@ Thanks for wanting to help bust some port ghosts! Here's how to get started.
 
 ```powershell
 # 1. Fork & clone the repo
-git clone https://github.com/your-username/PortGhost.git
+git clone https://github.com/dev-alt/PortGhost.git
 cd PortGhost
 
 # 2. Restore dependencies
@@ -51,7 +51,7 @@ Before submitting to the Store, update the `Identity Name` and `Publisher` field
 
 ## 🐛 Bug Reports
 
-Please open an [issue](https://github.com/your-username/PortGhost/issues) with:
+Please open an [issue](https://github.com/dev-alt/PortGhost/issues) with:
 1. Steps to reproduce
 2. Expected vs. actual behaviour
 3. Screenshots if applicable
