@@ -17,23 +17,25 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '10.0.x' 
+        dotnet-version: '10.0.x'
+        dotnet-quality: 'preview'  # Required until .NET 10 hits GA
 
     - name: Restore dependencies
       run: dotnet restore PortGhost.csproj
 
     - name: Build and Publish Single-File Executable
-      # We publish a standalone exe using win-x64, trimming, and single-file
       run: |
         dotnet publish PortGhost.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -o release_output
-      
+
     - name: Create Zip Archive
       run: |
-        Compress-Archive -Path "release_output\*.*" -DestinationPath "PortGhost-win-x64.zip"
+        Compress-Archive -Path "release_output\*" -DestinationPath "PortGhost-win-x64.zip"
 
     - name: Create GitHub Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
+        name: "PortGhost ${{ github.ref_name }}"
+        generate_release_notes: true
         files: |
           release_output/PortGhost.exe
           PortGhost-win-x64.zip
