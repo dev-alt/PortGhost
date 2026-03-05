@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 [![.NET 10](https://img.shields.io/badge/.NET-10.0-purple?style=flat-square)](https://dotnet.microsoft.com/download)
 
-PortGhost is a Windows desktop app that reveals which processes are haunting your network ports—perfect for developers tired of `"Port 3000 is already in use"` errors.
+PortGhost is a Windows desktop app that reveals which processes are haunting your network ports — perfect for developers tired of `"Port 3000 is already in use"` errors.
 
 ---
 
@@ -27,7 +27,6 @@ PortGhost shines a light on port hauntings:
 1. **Enter the port** (e.g., `3000`)
 2. **See the ghost** — Process name, PID, path, start time
 3. **Bust the ghost** — One-click process termination
-4. **Stay protected** — Optional tray monitoring
 
 ---
 
@@ -49,64 +48,9 @@ Download the latest self-contained executable from the [**Releases page**](https
 
 ---
 
-## 🔨 Building from Source
-
-### Prerequisites
-- [.NET 10 SDK](https://dotnet.microsoft.com/download)
-- Windows 10 or Windows 11
-
-### Steps
-
-```powershell
-# Clone the repository
-git clone https://github.com/dev-alt/PortGhost.git
-cd PortGhost
-
-# Restore & build
-dotnet restore
-dotnet build
-
-# Run
-dotnet run
-```
-
-### Build a Release Executable
-
-```powershell
-dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o ./dist
-# Output: ./dist/PortGhost.exe
-```
-
----
-
-## 🏗️ Architecture
-
-```
-PortGhost/
-├── Assets/                  # SVG icons and Store image assets
-├── Models/                  # Data models (PortInfo, ProcessInfo, etc.)
-├── Services/
-│   └── PortScanner.cs       # Core port-to-process detection engine
-├── MainWindow.xaml          # Main UI layout
-├── MainWindow.xaml.cs       # Main UI logic
-├── App.xaml                 # Application resources & theme
-├── Package.appxmanifest     # MSIX / Microsoft Store manifest
-└── .github/
-    └── workflows/
-        └── release.yml      # GitHub Actions release automation
-```
-
----
-
 ## 💻 How It Works
 
-PortGhost uses native Windows APIs via PowerShell/CIM:
-
-```powershell
-# Find the process occupying port 3000
-Get-NetTCPConnection -LocalPort 3000
-Get-Process -Id <PID>
-```
+PortGhost uses native Windows APIs to map open TCP ports to the owning process, then lets you terminate it with one click.
 
 ---
 
@@ -116,4 +60,4 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for setup instructions and guidelines.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
