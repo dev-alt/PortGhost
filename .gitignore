@@ -32,6 +32,11 @@ BundleArtifacts/
 *.appx
 *.appxbundle
 
+# Signing certificates — never commit these
+*.pfx
+*.p12
+*.cer
+
 # Code coverage
 *.coverage
 *.coveragexml
