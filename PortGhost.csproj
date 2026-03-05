@@ -17,8 +17,7 @@
     <Description>See what haunts your ports. Exorcise the demons.</Description>
     <Copyright>Copyright © 2025 PortGhost</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <!-- ApplicationIcon: set this once you have converted Assets\PortGhost_Logo.svg to .ico -->
-    <!-- <ApplicationIcon>Assets\PortGhost.ico</ApplicationIcon> -->
+    <ApplicationIcon>Assets\PortGhost.ico</ApplicationIcon>
 
     <!-- Publish profiles -->
     <PublishSingleFile Condition="'$(RuntimeIdentifier)' != ''">true</PublishSingleFile>
@@ -31,5 +30,9 @@
     <AppxPackageSigningEnabled Condition="'$(GenerateMsixOnBuild)' == 'true'">false</AppxPackageSigningEnabled>
 
   </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\PortGhost.ico" />
+  </ItemGroup>
 
 </Project>
