@@ -9,4 +9,5 @@ public class GhostManifestation
     public string ProcessName { get; set; } = string.Empty;
     public string ExecutablePath { get; set; } = string.Empty;
     public DateTime StartTime { get; set; }
+    public string Protocol { get; set; } = "TCP";
 }

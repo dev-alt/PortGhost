@@ -35,4 +35,8 @@
     <Resource Include="Assets\PortGhost.ico" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.0-preview5" />
+  </ItemGroup>
+
 </Project>

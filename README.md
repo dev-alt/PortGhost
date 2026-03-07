@@ -37,8 +37,13 @@ PortGhost shines a light on port hauntings:
 | ⚡ **Instant Detection** | Sub-second port-to-process resolution |
 | 📜 **Ghost History** | Track repeat offender processes |
 | 💀 **Auto-Bust** | Kill known ghosts automatically |
-| 🔢 **Dev Port Presets** | Quick buttons for `3000`, `8080`, `5173`, `4200` |
+| 🔢 **Dev Port Presets** | Quick buttons for common ports — **fully customizable** |
 | 🛡️ **Safe Mode** | Warns before killing system processes |
+| 🧹 **Ghost Sweep** | Scan all preset ports at once and see every haunting at a glance |
+| 🔌 **TCP + UDP** | Detect both TCP listeners and UDP bindings |
+| 📋 **Copy to Clipboard** | One-click copy of PID or executable path |
+| 🗂️ **System Tray** | Minimizes to tray so it stays out of your way |
+| ⌨️ **Keyboard Shortcuts** | `Enter` to scan, `Ctrl+R` to re-scan |
 
 ---
 
